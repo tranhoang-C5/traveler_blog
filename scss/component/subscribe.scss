@@ -1,0 +1,32 @@
+.subscribe {
+  margin-top: 60px;
+  padding: 20px 30px;
+  background-color: #f4f4f4;
+  .subscribe-content {
+    h2 {
+      font-weight: 200;
+      font-size: 1.2rem;
+    }
+    p {
+      color: $monsoon;
+      font-size: 0.85rem;
+    }
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+  }
+  form {
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    button {
+      @include button-style;
+      margin-left: 8px;
+    }
+    input {
+      display: block;
+      width: 100%;
+    }
+  }
+}

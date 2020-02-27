@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=z:400,700&display=swap");
+@import "./reset/reset.scss";
+
+@import "./base/Variable.scss";
+@import "./base/Mixins.scss";
+
+@import "./layout/responsive.scss";
+@import "./layout/layout.scss";
+
+@import "./component/nav-bar.scss";
+@import "./component/header.scss";
+@import "./component/travel_guide_item.scss";
+@import "./component/subscribe.scss";
+@import "./component/left-content.scss";
+@import "./component/views-more-card.scss";
+@import "./component/pagination.scss";
+@import "./component/right-content.d.scss";

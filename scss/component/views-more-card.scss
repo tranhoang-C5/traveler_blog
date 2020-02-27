@@ -1,0 +1,40 @@
+.more-news {
+  margin-top: 50px;
+  .row {
+    grid-gap: 30px;
+    grid-row-gap: 60px;
+    .views-more-card {
+      text-align: left;
+      box-shadow: 0 0 20px rgba(194, 194, 194, 0.349);
+      .aspect-ratio {
+        @include aspect-ratio(80%);
+        img {
+          object-fit: cover;
+        }
+      }
+      .content {
+        h5 {
+          font-family: $sub-font;
+          line-height: 1.6rem;
+          color: $fountain-blue;
+          font-style: italic;
+        }
+        h2 {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          letter-spacing: 1px;
+        }
+        p {
+          margin: 15px 0;
+          font-size: 0.7rem;
+        }
+        h3 {
+          font-size: 0.7rem;
+          font-weight: 400;
+          color: rgb(153, 153, 153);
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}

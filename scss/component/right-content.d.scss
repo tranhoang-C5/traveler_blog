@@ -1,0 +1,131 @@
+.sub-content {
+  text-align: center;
+  .sub-content-item {
+    padding-bottom: 30px;
+    .title {
+      font-size: 0.77rem;
+      width: 100%;
+      @include two-hyphen(rgb(105, 105, 105), 10px);
+      padding-bottom: 15px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    .aspect-ratio {
+      @include aspect-ratio(65%);
+    }
+    &.about {
+      h3 {
+        width: fit-content;
+        display: block;
+        position: relative;
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin: 0 auto;
+        margin-top: 15px;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          bottom: 3px;
+          background-color: $fountain-blue;
+          height: 7px;
+          width: 100%;
+          z-index: -1;
+          opacity: 0.5;
+        }
+      }
+      h5 {
+        color: rgb(170, 170, 170);
+        font-family: $sub-font;
+        line-height: 1.5rem;
+      }
+      p {
+        padding: 0 30px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: gray;
+        margin-bottom: 30px;
+      }
+    }
+    &.subscribe-and-follow {
+      i {
+        font-size: 12px;
+        display: inline-block;
+        border: 1px solid rgb(179, 179, 179);
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        margin-left: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(202, 202, 202, 0.281);
+        }
+        &:nth-child(1) {
+          color: rgb(58, 88, 158);
+          margin-left: 0;
+        }
+        &:nth-child(2) {
+          color: rgb(85, 172, 238);
+        }
+        &:nth-child(3) {
+          color: rgb(205, 32, 31);
+        }
+        &:nth-child(4) {
+          color: #8883e5;
+        }
+        &:nth-child(5) {
+          color: rgb(189, 8, 28);
+        }
+      }
+    }
+    &.feature-article {
+      .feature-item {
+        margin-bottom: 25px;
+        .aspect-ratio {
+          margin-bottom: 5px;
+        }
+        a {
+          font-size: 0.82rem;
+          color: rgb(105, 105, 105);
+        }
+        h4 {
+          font-size: 0.74rem;
+          color: rgb(179, 179, 179);
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    &.let-be-friend {
+      h4 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 0.82rem;
+        color: rgb(105, 105, 105);
+        padding: 0 20px;
+      }
+      form {
+        margin-bottom: 0;
+        width: 100%;
+        button {
+          @include button-style;
+          width: 100%;
+          padding: 12px;
+        }
+        input {
+          display: block;
+          width: 100%;
+          border: 1px solid rgb(206, 206, 206);
+          margin: 10px 0;
+          padding: 12px;
+        }
+      }
+    }
+  }
+}
