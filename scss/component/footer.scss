@@ -1,0 +1,87 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  .footer-title {
+    padding: 50px;
+    background-color: #f4f4f4;
+    h5 {
+      font-size: 0.65rem;
+      font-weight: 200;
+      letter-spacing: 2px;
+      word-spacing: 1px;
+    }
+    a {
+      font-size: 1.5rem;
+      color: black;
+      letter-spacing: 4px;
+      font-weight: 400;
+      padding-top: 20px;
+      word-spacing: 3px;
+    }
+  }
+
+  .my-img {
+    width: 100%;
+    display: flex;
+    .footer-img {
+      cursor: pointer;
+      width: 20%;
+      &:hover {
+        filter: brightness(110%);
+      }
+      transition: 0.3s;
+      .aspect-ratio {
+        @include aspect-ratio(100%);
+      }
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 3rem;
+    color: white;
+    padding: 15px;
+  }
+
+  .footer-nav {
+    padding: 0 50px 50px;
+    .left-content {
+      text-align: left;
+      color: #b4b4b4;
+      font-size: 0.65rem;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      font-weight: 200;
+    }
+    a {
+      display: inline-block;
+      color: white;
+      font-size: 0.75rem;
+      line-height: 0.75rem;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      padding: 0 10px;
+      border-right: 1px solid #b4b4b4;
+      &:last-child {
+        border: none;
+      }
+    }
+    .right-content {
+      text-align: right;
+      a {
+        border: none;
+        padding: 0 5px;
+        font-size: 1rem;
+      }
+    }
+    @media only screen and (max-width: $layout-breakpoint-md) {
+      .left-content {
+        text-align: center;
+      }
+      .right-content {
+        text-align: center;
+      }
+    }
+  }
+}
